@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <section class="form-card">
+        <h2>Contacto</h2>
+        <p class="descripcion">Envíanos tu información</p>
+
+        <form id="formContacto">
+
+            <div class="grid-2">
+                <div class="input-group">
+                    <label>Nombre *</label>
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                        <input type="text" id="nombre" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Apellido *</label>
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                        <input type="text" id="apellido" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Correo electrónico *</label>
+                <div class="input-icon">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="correo" required placeholder="ejemplo@gmail.com">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Teléfono *</label>
+                <div class="input-icon">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" id="telefono" required placeholder="5512345678">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Ciudad *</label>
+                <div class="input-icon">
+                    <i class="fa fa-city"></i>
+                    <input type="text" id="ciudad" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Mensaje</label>
+                <textarea id="mensaje" rows="4"></textarea>
+            </div>
+
+            <button type="submit">
+                <i class="fa fa-paper-plane"></i> Enviar mensaje
+            </button>
+
+        </form>
+    </section>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3>✅ Enviado correctamente</h3>
+        <p id="resultado"></p>
+        <button onclick="cerrarModal()">Cerrar</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
